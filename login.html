@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taskify — Login</title>
+<link rel="icon" href="assets/logo.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="login-screen">
+
+  <div class="login-card">
+
+```
+<div class="login-illustration">
+
+  <div class="pill-tag">
+    <img src="assets/logo.jpg" alt="Taskify">
+    <span>taskify.app</span>
+  </div>
+
+  <svg class="blob-art" viewBox="0 0 400 420">
+
+    <circle cx="90" cy="70" r="34" fill="#EAF5FF"/>
+    <circle cx="340" cy="60" r="20" fill="#BFE1FA"/>
+    <circle cx="60" cy="330" r="26" fill="#BFE1FA"/>
+    <circle cx="350" cy="300" r="16" fill="#EAF5FF"/>
+
+    <ellipse cx="210" cy="230" rx="150" ry="150" fill="#4FA8E8"/>
+
+    <ellipse cx="210" cy="120" rx="26" ry="60" fill="#7CC1F2"/>
+    <ellipse cx="210" cy="340" rx="26" ry="60" fill="#7CC1F2"/>
+    <ellipse cx="100" cy="230" rx="60" ry="26" fill="#7CC1F2"/>
+    <ellipse cx="320" cy="230" rx="60" ry="26" fill="#7CC1F2"/>
+
+    <ellipse cx="132" cy="148" rx="26" ry="58"
+      fill="#8FCBF5"
+      transform="rotate(-45 132 148)"/>
+
+    <ellipse cx="288" cy="148" rx="26" ry="58"
+      fill="#8FCBF5"
+      transform="rotate(45 288 148)"/>
+
+    <ellipse cx="132" cy="312" rx="26" ry="58"
+      fill="#8FCBF5"
+      transform="rotate(45 132 312)"/>
+
+    <ellipse cx="288" cy="312" rx="26" ry="58"
+      fill="#8FCBF5"
+      transform="rotate(-45 288 312)"/>
+
+    <circle cx="210" cy="230" r="66" fill="#2E86D8"/>
+
+    <circle cx="188" cy="222" r="8" fill="#0B2A44"/>
+    <circle cx="232" cy="222" r="8" fill="#0B2A44"/>
+
+    <path
+      d="M195 248 Q210 258 225 248"
+      stroke="#0B2A44"
+      stroke-width="4"
+      fill="none"
+      stroke-linecap="round"
+    />
+
+    <rect
+      x="330"
+      y="360"
+      width="34"
+      height="34"
+      rx="8"
+      fill="#2E86D8"
+      transform="rotate(12 330 360)"
+    />
+
+    <circle cx="40" cy="230" r="14" fill="#EAF5FF"/>
+
+  </svg>
+
+  <button class="mute-btn" type="button">🔊</button>
+
+</div>
+
+
+<div class="login-form-wrap">
+
+  <div class="login-brand">
+    <img src="assets/logo.jpg" alt="Taskify">
+    <span>Taskify</span>
+  </div>
+
+  <h1 id="authTitle">Welcome Back!</h1>
+
+  <p id="authSubtitle">
+    Enter your details below
+  </p>
+
+
+  <form id="authForm">
+
+    <label id="nameField" class="hidden">
+      Full name
+
+      <input
+        type="text"
+        id="authName"
+        placeholder="Aufha Abyan"
+      >
+    </label>
+
+
+    <label>
+      Email
+
+      <input
+        type="email"
+        id="authEmail"
+        placeholder="hello.alex@gmail.com"
+        required
+      >
+    </label>
+
+
+    <label>
+      Password
+
+      <div class="pw-wrap">
+
+        <input
+          type="password"
+          id="authPassword"
+          placeholder="••••••"
+          required
+          minlength="3"
+        >
+
+        <button
+          type="button"
+          id="togglePw"
+        >
+          👁
+        </button>
+
+      </div>
+
+    </label>
+
+
+    <div class="login-row">
+
+      <label class="remember">
+        <input
+          type="checkbox"
+          id="rememberMe"
+          checked
+        >
+        <span>Remember me</span>
+      </label>
+
+      <a href="#" class="forgot">
+        Forgot password?
+      </a>
+
+    </div>
+
+
+    <button
+      type="submit"
+      class="btn-primary full"
+      id="submitBtn"
+    >
+      Log in
+    </button>
+
+
+    <button
+      type="button"
+      class="btn-google full"
+    >
+      <span>G</span>
+      Log in with Google
+    </button>
+
+  </form>
+
+
+  <p class="switch-auth">
+
+    <span id="switchText">
+      Don't have an account?
+    </span>
+
+    <a href="#" id="switchAuthLink">
+      Sign Up
+    </a>
+
+  </p>
+
+
+  <button
+    type="button"
+    id="continueGuest"
+    class="continue-guest"
+  >
+    Continue browsing without logging in →
+  </button>
+
+</div>
+```
+
+  </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
