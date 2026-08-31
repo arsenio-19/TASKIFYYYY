@@ -47,3 +47,7 @@ function seedIfEmpty(){
   ];
   saveTasks(demo);
 }
+
+function clearTasks() {
+  localStorage.removeItem(STORE_KEYS.tasks);
+}
