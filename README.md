@@ -39,6 +39,10 @@ Atau bisa juga bikin akun baru sendiri lewat "Sign Up", atau klik "Continue brow
 
 Karena ini demo front-end murni, sistem login bersifat **mock** (disimpan di localStorage browser kamu sendiri), bukan otentikasi server sungguhan. Cocok untuk prototipe, portofolio, atau dasar pengembangan lebih lanjut.
 
+## Backend / Data Layer
+
+Taskify menggunakan LocalStorage sebagai data layer lokal untuk menyimpan data pengguna, session, dan task. Pengelolaan penyimpanan dipisahkan ke dalam `js/storage.js`, sehingga aplikasi tidak membutuhkan server atau database eksternal.
+
 ## Struktur file
 
 ```
@@ -67,3 +71,4 @@ taskify/
    ```
    npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css --watch
    ```
+
