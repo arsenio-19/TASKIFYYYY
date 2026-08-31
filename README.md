@@ -9,10 +9,6 @@ Aplikasi to-do list bertema **Taskify**, dibangun dengan HTML, **Tailwind CSS**,
    ```
    npx serve .
    ```
-   atau
-   ```
-   python3 -m http.server 8080
-   ```
    lalu buka `http://localhost:8080`.
 
 ## Akun demo
